@@ -1,0 +1,33 @@
+{
+  "name": "nawa-school-management",
+  "version": "1.0.0",
+  "description": "A comprehensive school management system",
+  "scripts": {
+    "install:all": "npm install && cd NAWA_CLIENT/front_end && npm install && cd ../back_end && npm install",
+    "start:frontend": "cd NAWA_CLIENT/front_end && npm run dev",
+    "start:backend": "cd NAWA_CLIENT/back_end && npm run dev",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "keywords": [
+    "school",
+    "management",
+    "react",
+    "nodejs"
+  ],
+  "author": "Tejas Bipu Shahi",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "node-fetch": "^2.7.0",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5"
+  }
+}
